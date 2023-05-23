@@ -46,5 +46,14 @@
 }
 
 .main {
+    /* Place in Main Page Grid */
     grid-column: 2 / span 2;
+
+    /* Nested Grid for content elements */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.content {
+    grid-row: 1 / span 2;
 }
