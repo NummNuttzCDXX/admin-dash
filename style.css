@@ -8,7 +8,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 250px 3fr 1fr;
-    grid-template-rows: 80px calc(100vh - 80px);
+    grid-template-rows: 100px calc(100vh - 80px);
 }
 
 /* Whole Top */
@@ -20,7 +20,7 @@ body {
     /* Nested Grid for the header */
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
     align-items: center;
 }
 
@@ -38,13 +38,27 @@ input[type=search] {
     /* Remove Default browser based styling */
     appearance: none;
     background-color: rgb(238, 238, 238);
-    width: 90%;
+    width: 65%;
     height: 1.6rem;
     border-radius: 12px;
 }
 
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.account .bell {
+    width: 1.3rem;
+}
+
+.account .pro-pic {
+    scale: .5;
+}
+
 .profile {
     grid-row: 2 / 3;
+    height: 42px;
 
     /* Flex for placement within the header grid cell */
     display: flex;
@@ -70,7 +84,7 @@ input[type=search] {
     content: 'Hi there, ';
     font-size: .9rem;
     position: absolute;
-    top: .99ch;
+    top: -.5ch;
     left: 115px;
 }
 
@@ -105,8 +119,7 @@ input[type=search] {
 
     /* Nested grid for SB Elements */
     display: grid;
-    grid-template-rows: 80px 1fr;
-
+    grid-template-rows: 80px calc(100vh - 80px); /* TEMP NEEDS TO BE FIXED */
     background-color: var(--MAIN);
     color: white;
     font-size: 1.3rem;
