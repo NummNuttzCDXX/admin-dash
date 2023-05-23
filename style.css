@@ -1,6 +1,10 @@
+body {
+    margin: 0;
+}
+
 .container {
     display: grid;
-    grid-template-columns: 300px 3fr 1fr;
+    grid-template-columns: 250px 3fr 1fr;
     grid-template-rows: 80px calc(100vh - 80px);
 }
 
@@ -37,6 +41,18 @@
     /* Nested grid for SB Elements */
     display: grid;
     grid-template-rows: 80px 1fr;
+
+    background-color: rgb(56, 119, 255);
+    color: white;
+    font-size: 1.3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 15px;
 }
 
 .links {
