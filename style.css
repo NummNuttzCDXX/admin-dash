@@ -16,18 +16,21 @@ body {
 
     /* Nested Grid for the header */
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
-/* Lower Top */
-.lower-head {
-    grid-column: 1 / 4;
+.profile {
     grid-row: 2 / 3;
+}
 
-    /* FlexBox to align Profile/Buttons on bottom row of header grid */
-    display: flex;
-    gap: 20px;
+.btns {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.btns button {
+    margin-right: 20px;
 }
 
 .lower-head p {
