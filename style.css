@@ -1,12 +1,14 @@
 .container {
     display: grid;
     grid-template-columns: 300px 3fr 1fr;
+    grid-template-rows: 80px calc(100vh - 80px);
 }
 
 /* Whole Top */
 .header {
     grid-area: Header;
     grid-column: 2 / 4;
+    grid-row: 1 / 2;
 
     /* Nested Grid for the header */
     display: grid;
@@ -26,4 +28,12 @@
 
 .lower-head p {
     margin-right: auto;
+}
+
+.sidebar {
+    grid-row: 1 / span 2;
+}
+
+.main {
+    grid-column: 2 / span 2;
 }
