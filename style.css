@@ -49,6 +49,9 @@ input[type=search] {
     /* Flex for placement within the header grid cell */
     display: flex;
     align-items: center;
+
+    /* Place generated content relative to container */
+    position: relative;
 }
 
 .profile img {
@@ -60,6 +63,15 @@ input[type=search] {
     margin-left: 25px;
     margin-top: 10px;
     font-size: 1.5rem;
+}
+
+/* Generated content relative to container */
+.profile span::before {
+    content: 'Hi there, ';
+    font-size: .9rem;
+    position: absolute;
+    top: .99ch;
+    left: 115px;
 }
 
 /* Container Holding Buttons */
