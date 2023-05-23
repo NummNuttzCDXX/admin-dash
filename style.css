@@ -18,17 +18,40 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+header {
+    display: flex;
+}
+
+img {
+    width: 1.5rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input[type=search] {
+    /* Remove Default browser based styling */
+    appearance: none;
+    background-color: rgb(238, 238, 238);
+
+    width: 90%;
+    height: 1.6rem;
+    border-radius: 12px;
 }
 
 .profile {
     grid-row: 2 / 3;
 }
 
+/* Container Holding Buttons */
 .btns {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
 }
 
+/* Actual Buttons */
 .btns button {
     margin-right: 20px;
 }
