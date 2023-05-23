@@ -28,7 +28,7 @@ header {
     display: flex;
 }
 
-img {
+label img {
     width: 1.5rem;
     margin-left: 5px;
     margin-right: 5px;
@@ -45,6 +45,21 @@ input[type=search] {
 
 .profile {
     grid-row: 2 / 3;
+
+    /* Flex for placement within the header grid cell */
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    margin-left: 25px;
+    scale: .7;
+}
+
+.profile span {
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 1.5rem;
 }
 
 /* Container Holding Buttons */
