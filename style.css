@@ -31,7 +31,18 @@
 }
 
 .sidebar {
+    /* Placement on MAIN GRID */
     grid-row: 1 / span 2;
+
+    /* Nested grid for SB Elements */
+    display: grid;
+    grid-template-rows: 80px 1fr;
+}
+
+.links {
+    /* Double Nested Grid for the links */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .main {
