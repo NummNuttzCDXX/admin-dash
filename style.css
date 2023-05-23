@@ -1,5 +1,8 @@
 body {
     margin: 0;
+
+    /* MAIN color var */
+    --MAIN: rgb(56, 119, 255);
 }
 
 .container {
@@ -35,7 +38,6 @@ input[type=search] {
     /* Remove Default browser based styling */
     appearance: none;
     background-color: rgb(238, 238, 238);
-
     width: 90%;
     height: 1.6rem;
     border-radius: 12px;
@@ -49,11 +51,21 @@ input[type=search] {
 .btns {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+
+    /* Flexbox will keep buttons placed adjacent to each other instead of wrapping on smaller screens */
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Actual Buttons */
 .btns button {
-    margin-right: 20px;
+    margin-right: 10px;
+    height: 1.6rem;
+    width: 60px;
+
+    background-color: var(--MAIN);
+    color: white;
+    border-radius: 12px;
 }
 
 .lower-head p {
@@ -68,7 +80,7 @@ input[type=search] {
     display: grid;
     grid-template-rows: 80px 1fr;
 
-    background-color: rgb(56, 119, 255);
+    background-color: var(--MAIN);
     color: white;
     font-size: 1.3rem;
 }
