@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template-columns: 300px 3fr 1fr;
+}
+
+/* Whole Top */
+.header {
+    grid-area: Header;
+    grid-column: 2 / 4;
+
+    /* Nested Grid for the header */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* Lower Top */
+.lower-head {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+
+    /* FlexBox to align Profile/Buttons on bottom row of header grid */
+    display: flex;
+    gap: 20px;
+}
+
+.lower-head p {
+    margin-right: auto;
+}
