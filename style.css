@@ -162,10 +162,21 @@ li {
 }
 
 .head {
-    /* Place p in top row spanning all columns */
+    /* Place Head in top row spanning all columns */
     grid-column: 1 / -1;
-    height: 50px;
+
+    /* Formatting stuff */
+    height: 40px;
     background-color: rgb(238, 238, 238);
+
+    /* Flex for placement within Grid Cell */
+    display: flex;
+    align-items: flex-end;
+}
+
+.news, .trend {
+    display: grid;
+    grid-template-rows: 50px auto;
 }
 
 .card {
@@ -173,8 +184,7 @@ li {
 }
 
 .card,
-.news,
-.trend {
+.items {
     background-color: white;
     border-radius: 18px;
 }
