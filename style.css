@@ -145,7 +145,7 @@ li {
 
     /* Nested Grid for content elements */
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-auto-rows: 1fr;
     gap: 10px;
 
@@ -154,11 +154,13 @@ li {
 
 .content {
     grid-row: 1 / span 2;
-
+    
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 40px 1fr 1fr;
+    grid-auto-rows: 1fr;
     gap: 10px;
+    margin-left: 10px;
 }
 
 .head {
@@ -180,11 +182,22 @@ li {
 }
 
 .card {
-    height: 100%;
+    height: 200px;
+    border-left: 5px solid #ff6a6a;
+}
+
+/* Items below headings of side content */
+.items {
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
 }
 
 .card,
 .items {
     background-color: white;
-    border-radius: 18px;
+    border-radius: 10px;
+
+
 }
