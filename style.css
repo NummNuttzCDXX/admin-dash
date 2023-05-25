@@ -175,6 +175,10 @@ li {
     /* Flex for placement within Grid Cell */
     display: flex;
     align-items: flex-end;
+
+    /* Text Stuff */
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .news, .trend {
@@ -224,6 +228,16 @@ li {
 
 .news .items div:nth-child(n + 2) {
     padding-top: 10px;
+}
+
+/* Announcement Heading */
+.news .items div div {
+    font-weight: 600;
+}
+
+/* Sets margin for dummy text in Announcement Items */
+.news .items div p {
+    margin-top: 5px;
 }
 
 .card,
