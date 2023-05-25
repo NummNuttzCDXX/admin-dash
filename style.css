@@ -8,7 +8,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 250px 3fr 1fr;
-    grid-template-rows: 100px calc(100vh - 80px);
+    grid-template-rows: 100px 100vh;
 }
 
 /* Whole Top */
@@ -119,7 +119,7 @@ input[type=search] {
 
     /* Nested grid for SB Elements */
     display: grid;
-    grid-template-rows: 80px calc(100vh - 80px); /* TEMP NEEDS TO BE FIXED */
+    grid-template-rows: 80px 100vh; /* TEMP NEEDS TO BE FIXED */
     background-color: var(--MAIN);
     color: white;
     font-size: 1.3rem;
@@ -215,6 +215,9 @@ li {
 /* Items below headings of side content */
 .items {
     padding: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
