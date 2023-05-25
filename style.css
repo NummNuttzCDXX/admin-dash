@@ -160,6 +160,7 @@ li {
     grid-template-rows: 40px 1fr 1fr;
     grid-auto-rows: 1fr;
     gap: 10px;
+
     margin-left: 10px;
 }
 
@@ -184,6 +185,25 @@ li {
 .card {
     height: 200px;
     border-left: 5px solid #ff6a6a;
+
+    /* Create Grid on cards to align the three elements they contain -- Heading, Content, and Icons */
+    display: grid;
+    grid-template-rows: 20px auto 40px;
+}
+
+.card p {
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.card .icons {
+    justify-self: flex-end;
+}
+
+.card .icons img {
+    width: 1.5rem;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* Items below headings of side content */
@@ -198,6 +218,4 @@ li {
 .items {
     background-color: white;
     border-radius: 10px;
-
-
 }
