@@ -156,6 +156,12 @@ ul {
 
 li {
     padding: 15px;
+    padding-left: 0;
+}
+
+li img {
+    width: 25px;
+    padding-right: 15px;
 }
 
 .links {
