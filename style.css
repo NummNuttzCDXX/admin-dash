@@ -131,6 +131,20 @@ input[type=search] {
     font-size: 1.3rem;
 }
 
+/* Dashboard Logo/Icon */
+.logo img {
+    width: 64px;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    margin-left: 10px;
+    font-size: 1.7rem;
+}
+
 ul {
     list-style: none;
 }
