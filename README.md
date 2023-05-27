@@ -3,4 +3,7 @@ An Odin Assignment demonstrating the use of CSS Grid along with everything else 
 
 
 Photo Credit: <br>
-<a href="https://www.flaticon.com/free-icons/cockatoo" title="cockatoo icons">Cockatoo icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/cockatoo" title="cockatoo icons">Cockatoo icons created by Freepik - Flaticon</a> <br>
+<a href="https://www.flaticon.com/free-icons/person" title="person icons">Person icons created by Freepik - Flaticon</a> <br>
+<a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by Freepik - Flaticon</a> <br>
+<a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> <br>
