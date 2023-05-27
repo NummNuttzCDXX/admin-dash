@@ -14,6 +14,9 @@ body {
 
 /* Whole Top */
 .header {
+    /* Make it stick to top of screen while you scroll */
+    position: sticky;
+    top: 0px;
     background: white;
 
     grid-area: Header;
@@ -198,9 +201,14 @@ li {
     grid-template-rows: 20px auto 40px;
 }
 
+.card-head {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-head,
 .card p {
-    margin-bottom: 0;
-    padding: 5px;
+    margin: 1rem;
 }
 
 .card .icons {
