@@ -275,3 +275,10 @@ li {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
+
+/* Selects all Content sections to change the color of the text */
+.card p,
+.news .items div p,
+.trend .items div .user-desc {
+    color: rgb(91, 91, 91);
+}
