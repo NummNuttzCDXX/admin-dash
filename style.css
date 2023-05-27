@@ -157,8 +157,8 @@ li {
     
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 40px 1fr 1fr;
-    grid-auto-rows: 1fr;
+    grid-template-rows: 40px;
+    grid-auto-rows: minmax(170px, 200px);
     gap: 10px;
 
     margin-left: 10px;
@@ -247,4 +247,31 @@ li {
 .items {
     background-color: white;
     border-radius: 10px;
+}
+
+.trend .items {
+    gap: 15px;
+}
+
+/* Make the individual Users Grids */
+.trend .items div {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 0;
+    column-gap: 10px;
+}
+
+/* Trend User IMG */
+.trend .items div img {
+    grid-row: 1 / -1;
+}
+
+.user {
+    grid-column: 2 / 3;
+}
+
+.user-desc {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
