@@ -126,7 +126,7 @@ input[type=search] {
 
     /* Nested grid for SB Elements */
     display: grid;
-    grid-template-rows: 80px 100vh; /* TEMP NEEDS TO BE FIXED */
+    grid-template-rows: 100px 100vh; /* TEMP NEEDS TO BE FIXED */
     background-color: var(--MAIN);
     color: white;
     font-size: 1.3rem;
@@ -144,6 +144,10 @@ input[type=search] {
 
     margin-left: 10px;
     font-size: 1.7rem;
+
+    position: sticky;
+    top: 0;
+    background-color: rgb(56, 119, 255);
 }
 
 ul {
